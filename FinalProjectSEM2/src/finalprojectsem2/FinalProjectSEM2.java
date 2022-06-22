@@ -16,5 +16,5 @@ public class FinalProjectSEM2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("TESSSS");
     }
-    
+   // so smngat yh, nti tak kasi kadepku klo fpnya selese 
 }
