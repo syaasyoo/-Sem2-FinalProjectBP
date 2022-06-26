@@ -5,9 +5,10 @@ public class cTransaksi {
     cBarang barang;
     int jumlahbrg;
     int status;
+    int harga;
     cTransaksi next;
-    cTransaksi (String k, String p, cBarang b, int jumlah, int s){
-        kode = k; pembeli = p; barang = b; jumlahbrg = jumlah; status = s;
+    cTransaksi (String k, String p, cBarang b, int jumlah, int s, int h){
+        kode = k; pembeli = p; barang = b; jumlahbrg = jumlah; status = s; harga = h;
         next = null;
     }
     public void setStatus (int s){ // untuk melihat transaksi diproses atau tidak
@@ -27,5 +28,8 @@ public class cTransaksi {
     }
     public int getStatus(){
         return status;
+    }
+    public int getHarga(){
+        return harga;
     }
 }
