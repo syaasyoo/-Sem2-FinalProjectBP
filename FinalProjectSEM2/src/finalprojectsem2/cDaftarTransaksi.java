@@ -23,13 +23,12 @@ public class cDaftarTransaksi {
             rear.next = baru;
             rear=baru;
         }
-        System.out.println("Penambahan Sukses...");
+        
     }
     public void lihatTransaksi (){
         int i=1;
-        System.out.println("\n Daftar Transaksi:");
         for (cTransaksi t=front; t!=null; t=t.next){
-            System.out.print(i+".");
+            System.out.print(i+".  ");
             System.out.print(t.getKode()+"-");
             System.out.print(t.getPembeli()+"-");
             System.out.print(t.getBarang().getNama()+"-");
@@ -54,8 +53,8 @@ public class cDaftarTransaksi {
             total = total + (t.getBarang().getHarga()*t.getJumlah());
         }
         System.out.println("Total Belanja: "+total);
-        System.out.println("Diskon       : "+(0.1 * total));
-        System.out.println("Biaya        : "+(total - (0.1*total)));
+        System.out.println("Diskon       : "+(0.05 * total));
+        System.out.println("Biaya        : "+(total - (0.05*total)));
     }
     public void hapusTransaksi (int nomor){
         // Bug : jika transaksi kosong dan dilakukan penghapusan maka akan terjadi nullPointer
@@ -72,7 +71,7 @@ public class cDaftarTransaksi {
                 front = front.next;
                 t.next = null;
             }
-            System.out.println("["+t.getBarang().getNama()+"] dihapus");
+            System.out.println("\t [("+t.getBarang().getNama()+") dihapus!]");
         }
         if (nomor > 1 && t.next != null) { // posisi tengah
             for (;t != null;t=t.next){
@@ -90,7 +89,7 @@ public class cDaftarTransaksi {
                 prev.next = t.next;
                 t.next = null;
             }
-            System.out.println("["+t.getBarang().getNama()+"] dihapus");
+            System.out.println("\t [("+t.getBarang().getNama()+") dihapus!]");
         }
 
     }
