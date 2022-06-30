@@ -167,7 +167,6 @@ public class appToko {
                     }while (valid != true);
                     if (valid ==true) {
                         System.out.println("      ◂◂[Selamat Datang!]▸▸ ");
-                        System.out.println("    ◂◂[Login Owner Berhasil]▸▸");
                         System.out.println("");
                     }
                     System.out.println("––––––––––––––––––––––––––––––––––––––––");
