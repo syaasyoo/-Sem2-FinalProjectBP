@@ -28,7 +28,7 @@ public class cDaftarTransaksi {
     public void lihatTransaksi (){
         int i=1;
         for (cTransaksi t=front; t!=null; t=t.next){
-            System.out.print(i+".  ");
+            System.out.print(i+". ");
             System.out.print(t.getKode()+"-");
             System.out.print(t.getPembeli()+"-");
             System.out.print(t.getBarang().getNama()+"-");
