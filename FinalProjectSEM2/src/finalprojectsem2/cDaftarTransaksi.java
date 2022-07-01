@@ -40,9 +40,8 @@ public class cDaftarTransaksi {
         //Metode dengan perbedaan nama, metode lain dapat dilakukan dng penggunaan parameter
         int i=1;
         double total = 0, diskon;
-        System.out.println("\n Daftar Transaksi Member: ");
         for (cTransaksi t=front; t!=null; t=t.next){
-            System.out.print(i+".");
+            System.out.print(i+". ");
             System.out.print(t.getKode()+"-");
             System.out.print(t.getPembeli()+"-");
             System.out.print(t.getBarang().getNama()+"-");
@@ -51,9 +50,10 @@ public class cDaftarTransaksi {
             i++;
             total = total + (t.getBarang().getHarga()*t.getJumlah());
         }
-        System.out.println("Total Belanja: "+total);
-        System.out.println("Diskon       : "+(0.05 * total));
-        System.out.println("Biaya        : "+(total - (0.05*total)));
+        System.out.println("");
+        System.out.println("Total Harga\t\t: Rp."+total);
+        System.out.println("Diskon Member 5%\t: Rp."+(0.05 * total));
+        System.out.println("Total Setelah Diskon\t: Rp."+(total - (0.05*total)));
     }
     public void hapusTransaksi (int nomor){
         // Bug : jika transaksi kosong dan dilakukan penghapusan maka akan terjadi nullPointer
