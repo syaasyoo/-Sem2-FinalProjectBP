@@ -239,7 +239,7 @@ public class appToko {
                                 System.out.println("╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌");
                                 break;
                             case 3:
-                                System.out.println("\t  𝐃𝐀𝐅𝐓𝐀𝐑 𝐓𝐑𝐀𝐍𝐒𝐀𝐊𝐒𝐈");
+                                System.out.println("\t𝐃𝐀𝐅𝐓𝐀𝐑 𝐓𝐑𝐀𝐍𝐒𝐀𝐊𝐒𝐈 𝐌𝐄𝐌𝐁𝐄𝐑");
                                 beli.lihatTransaksiMember();
                                 System.out.println("");
                                 System.out.println("╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌");
@@ -255,7 +255,7 @@ public class appToko {
                                 jual.sambungTransaksi(beli.getFront(), beli.getRear());
                                 break;
                         }
-                    }while (pilih2!=4);
+                    }while (pilih2!=5);
                     break;
                 case 3:
                     System.out.println("╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌");
