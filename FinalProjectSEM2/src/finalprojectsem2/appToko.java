@@ -46,7 +46,7 @@ public class appToko {
             System.out.println("2. Member");
             System.out.println("3. Admin");
             System.out.println("4. Owner");
-            System.out.println("5. Exit");
+            System.out.println("5. Exit ✖");
             System.out.print("Pilih\t\t\t: ");
             pilih = sc.nextInt();
             
@@ -66,7 +66,7 @@ public class appToko {
                         System.out.println("1. Tambah");
                         System.out.println("2. Hapus");
                         System.out.println("3. Lihat");
-                        System.out.println("4. Exit");
+                        System.out.println("4. Back ↺");
                         System.out.print("Pilih\t\t\t: ");
                         pilih2 = sc.nextInt();
                         System.out.println("╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌");
@@ -173,16 +173,16 @@ public class appToko {
                     kode++;
                     // Linked List memasukkan data dari Member
                     beli = new cDaftarTransaksi();
-                    System.out.print("Masukkan Nama\t\t: ");
-                    nama = sc.next();
                     do{
                         System.out.println("             𝐌𝐄𝐌𝐁𝐄𝐑");
                         System.out.println("1. Tambah");
                         System.out.println("2. Hapus");
                         System.out.println("3. Lihat");
-                        System.out.println("4. Kembali");
+                        System.out.println("4. Ubah PIN");
+                        System.out.println("5. Back ↺");
                         System.out.print("Pilih\t\t\t: ");
                         pilih2 = sc.nextInt();
+                        System.out.println("╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌");
                         switch (pilih2){
                             case 1:                                  
                                     cTransaksi br=null;
@@ -229,16 +229,29 @@ public class appToko {
                                 break;
                             case 2:
                                 // Hapus Transaksi
+                                System.out.println("\t  𝐇𝐀𝐏𝐔𝐒 𝐓𝐑𝐀𝐍𝐒𝐀𝐊𝐒𝐈");
                                 beli.lihatTransaksi();
-                                System.out.println("Hapus Nomor\t\t: ");
+                                System.out.println("");
+                                System.out.print("Hapus Nomor\t\t: ");
                                 int hapus = sc.nextInt();
                                 beli.hapusTransaksi(hapus);
+                                System.out.println("");
+                                System.out.println("╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌");
                                 break;
                             case 3:
+                                System.out.println("\t  𝐃𝐀𝐅𝐓𝐀𝐑 𝐓𝐑𝐀𝐍𝐒𝐀𝐊𝐒𝐈");
                                 beli.lihatTransaksiMember();
+                                System.out.println("");
+                                System.out.println("╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌");
                                 break;
                             case 4:
+                                //Ubah PIN
+                                
+                                break;
+                            case 5:
                                 //Transaksi selesai, sambungkan transaksi pembeli ke antrian transaksi toko
+                                System.out.println("            << Back <<          ");
+                                System.out.println("");
                                 jual.sambungTransaksi(beli.getFront(), beli.getRear());
                                 break;
                         }
@@ -278,7 +291,7 @@ public class appToko {
                             System.out.println("Jumlah : "+t.getJumlah());
                             System.out.println("Proses Transaksi?");
                             System.out.println("1. Proses");
-                            System.out.println("2. Exit");
+                            System.out.println("2. Back ↺");
                             System.out.print("Pilih\t\t\t: ");
                             int aksi = sc.nextInt();
                                 if (aksi == 1){
