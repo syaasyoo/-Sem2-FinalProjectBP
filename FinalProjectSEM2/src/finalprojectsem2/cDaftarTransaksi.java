@@ -1,4 +1,3 @@
-
 package finalprojectsem2;
 
 public class cDaftarTransaksi {
@@ -133,7 +132,7 @@ public class cDaftarTransaksi {
                 // cek member berdasarkan data nama/kode pembeli
                 if (t.getPembeli().compareToIgnoreCase("10") == 0 || t.getPembeli().compareToIgnoreCase("11") == 0 || t.getPembeli().compareToIgnoreCase("12")== 0 ) {
                     // untuk member
-                    nominal = nominal - (0.1*nominal);
+                    nominal = nominal - (0.05*nominal);
                 }
                     ;
 
